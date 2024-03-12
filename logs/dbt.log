@@ -105,3 +105,694 @@
 [0m03:47:20.939397 [debug] [MainThread]: Command `dbt compile` succeeded at 03:47:20.939284 after 102.01 seconds
 [0m03:47:20.948321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e40317d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e2afd5990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e2b0a8160>]}
 [0m03:47:20.952974 [debug] [MainThread]: Flushing usage events
+[0m04:21:34.107763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf685c3dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf661a9ae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf661a9a80>]}
+
+
+============================== 04:21:34.110281 | 9f4c8329-c0d2-45ce-b3c5-1052d50ea83c ==============================
+[0m04:21:34.110281 [info ] [MainThread]: Running with dbt=1.6.10
+[0m04:21:34.116005 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/efs/fs1/dbt-core-dev/427e1d61-9912-4142-8bbe-5220cf80f1cd/805a1d64-6c0c-4682-be0b-a1ea4080d49b/12de3295-704c-4a52-98ba-9574115f2c32/dbt-files', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/mnt/efs/fs1/dbt-core-dev/427e1d61-9912-4142-8bbe-5220cf80f1cd/805a1d64-6c0c-4682-be0b-a1ea4080d49b/12de3295-704c-4a52-98ba-9574115f2c32/jaffle_shop_snowpark/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir /mnt/efs/fs1/dbt-core-dev/427e1d61-9912-4142-8bbe-5220cf80f1cd/805a1d64-6c0c-4682-be0b-a1ea4080d49b/12de3295-704c-4a52-98ba-9574115f2c32/dbt-files --profile DEFAULT', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m04:21:35.135690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9f4c8329-c0d2-45ce-b3c5-1052d50ea83c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf6a903250>]}
+[0m04:21:35.155347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9f4c8329-c0d2-45ce-b3c5-1052d50ea83c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf536a8370>]}
+[0m04:21:35.161194 [info ] [MainThread]: Registered adapter: databricks=1.6.8
+[0m04:21:35.185264 [debug] [MainThread]: checksum: cb2707219def04818abb4a7bd5cbef5cb0d33b4ec9a7321738cb92f485b03034, vars: {}, profile: DEFAULT, target: , version: 1.6.10
+[0m04:21:35.277180 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m04:21:35.286505 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m04:21:35.297240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9f4c8329-c0d2-45ce-b3c5-1052d50ea83c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf533480d0>]}
+[0m04:21:35.461751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9f4c8329-c0d2-45ce-b3c5-1052d50ea83c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf534ffeb0>]}
+[0m04:21:35.466987 [info ] [MainThread]: Found 5 models, 3 seeds, 20 tests, 0 sources, 0 exposures, 0 metrics, 476 macros, 0 groups, 0 semantic models
+[0m04:21:35.471290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9f4c8329-c0d2-45ce-b3c5-1052d50ea83c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf53318430>]}
+[0m04:21:35.482223 [info ] [MainThread]: 
+[0m04:21:35.487934 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m04:21:35.498652 [debug] [ThreadPool]: Acquiring new databricks connection 'list_5x_dev'
+[0m04:21:35.506806 [debug] [ThreadPool]: Using databricks connection "list_5x_dev"
+[0m04:21:35.513320 [debug] [ThreadPool]: On list_5x_dev: GetSchemas(database=5x_dev, schema=None)
+[0m04:21:35.521743 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m04:21:37.681411 [debug] [ThreadPool]: SQL status: OK in 2.1600000858306885 seconds
+[0m04:21:37.692051 [debug] [ThreadPool]: On list_5x_dev: Close
+[0m04:21:37.947091 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_5x_dev, now create_5x_dev_Anurag_Dev_Databricks_Python)
+[0m04:21:37.953352 [debug] [ThreadPool]: Creating schema "database: "5x_dev"
+schema: "Anurag_Dev_Databricks_Python"
+"
+[0m04:21:37.967638 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m04:21:37.972349 [debug] [ThreadPool]: Using databricks connection "create_5x_dev_Anurag_Dev_Databricks_Python"
+[0m04:21:37.977750 [debug] [ThreadPool]: On create_5x_dev_Anurag_Dev_Databricks_Python: /* {"app": "dbt", "dbt_version": "1.6.10", "dbt_databricks_version": "1.6.8", "databricks_sql_connector_version": "2.9.4", "profile_name": "DEFAULT", "target_name": "default", "connection_name": "create_5x_dev_Anurag_Dev_Databricks_Python"} */
+create schema if not exists `5x_dev`.`Anurag_Dev_Databricks_Python`
+  
+[0m04:21:38.007049 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:21:45.392883 [debug] [ThreadPool]: SQL status: OK in 7.389999866485596 seconds
+[0m04:21:45.691397 [debug] [ThreadPool]: Spark adapter: NotImplemented: commit
+[0m04:21:45.697265 [debug] [ThreadPool]: On create_5x_dev_Anurag_Dev_Databricks_Python: ROLLBACK
+[0m04:21:45.702397 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m04:21:45.711142 [debug] [ThreadPool]: On create_5x_dev_Anurag_Dev_Databricks_Python: Close
+[0m04:21:45.944668 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_5x_dev_Anurag_Dev_Databricks_Python, now list_5x_dev_Anurag_Dev_Databricks_Python)
+[0m04:21:45.955449 [debug] [ThreadPool]: Using databricks connection "list_5x_dev_Anurag_Dev_Databricks_Python"
+[0m04:21:45.960408 [debug] [ThreadPool]: On list_5x_dev_Anurag_Dev_Databricks_Python: GetTables(database=5x_dev, schema=Anurag_Dev_Databricks_Python, identifier=None)
+[0m04:21:45.969213 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m04:21:47.429874 [debug] [ThreadPool]: SQL status: OK in 1.4600000381469727 seconds
+[0m04:21:47.440645 [debug] [ThreadPool]: On list_5x_dev_Anurag_Dev_Databricks_Python: Close
+[0m04:21:47.676381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9f4c8329-c0d2-45ce-b3c5-1052d50ea83c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf533ef250>]}
+[0m04:21:47.684621 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m04:21:47.692112 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m04:21:47.696958 [info ] [MainThread]: Concurrency: 1 threads (target='default')
+[0m04:21:47.705355 [info ] [MainThread]: 
+[0m04:21:47.714701 [debug] [Thread-1 (]: Began running node model.jaffle_shop_snowpark.stg_customers
+[0m04:21:47.721639 [info ] [Thread-1 (]: 1 of 5 START python table model Anurag_Dev_Databricks_Python.stg_customers ..... [RUN]
+[0m04:21:47.733633 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_5x_dev_Anurag_Dev_Databricks_Python, now model.jaffle_shop_snowpark.stg_customers)
+[0m04:21:47.744033 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop_snowpark.stg_customers
+[0m04:21:47.777025 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop_snowpark.stg_customers"
+[0m04:21:47.836307 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_customers (compile): 04:21:47.751917 => 04:21:47.836070
+[0m04:21:47.841638 [debug] [Thread-1 (]: Began executing node model.jaffle_shop_snowpark.stg_customers
+[0m04:21:47.875830 [debug] [Thread-1 (]: Writing runtime python for node "model.jaffle_shop_snowpark.stg_customers"
+[0m04:21:47.924826 [debug] [Thread-1 (]: On model.jaffle_shop_snowpark.stg_customers: 
+  
+    
+import snowflake.snowpark.functions as f
+from snowflake.snowpark.functions import col
+
+def model(dbt, session):
+    dbt.config(materialized = "table")
+    df = dbt.ref("raw_customers")
+    df_new= df.select(df["id"].alias("customer_id"), df.first_name, df.last_name)
+    return df_new
+
+
+# This part is user provided model code
+# you will need to copy the next section to run the code
+# COMMAND ----------
+# this part is dbt logic for get ref work, do not modify
+
+def ref(*args, **kwargs):
+    refs = {"raw_customers": "`5x_dev`.`Anurag_Dev_Databricks_Python`.`raw_customers`"}
+    key = '.'.join(args)
+    version = kwargs.get("v") or kwargs.get("version")
+    if version:
+        key += f".v{version}"
+    dbt_load_df_function = kwargs.get("dbt_load_df_function")
+    return dbt_load_df_function(refs[key])
+
+
+def source(*args, dbt_load_df_function):
+    sources = {}
+    key = '.'.join(args)
+    return dbt_load_df_function(sources[key])
+
+
+config_dict = {}
+
+
+class config:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @staticmethod
+    def get(key, default=None):
+        return config_dict.get(key, default)
+
+class this:
+    """dbt.this() or dbt.this.identifier"""
+    database = "5x_dev"
+    schema = "Anurag_Dev_Databricks_Python"
+    identifier = "stg_customers"
+    
+    def __repr__(self):
+        return '`5x_dev`.`Anurag_Dev_Databricks_Python`.`stg_customers`'
+
+
+class dbtObj:
+    def __init__(self, load_df_function) -> None:
+        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)
+        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)
+        self.config = config
+        self.this = this()
+        self.is_incremental = False
+
+# COMMAND ----------
+
+# how to execute python model in notebook
+# dbt = dbtObj(spark.table)
+# df = model(dbt, spark)
+
+
+# --- Autogenerated dbt materialization code. --- #
+dbt = dbtObj(spark.table)
+df = model(dbt, spark)
+
+import pyspark
+
+# make sure pyspark.sql.connect.dataframe exists before using it
+try:
+    import pyspark.sql.connect.dataframe
+    newer_pyspark_available = True
+except ImportError:
+    newer_pyspark_available = False
+
+# make sure pandas exists before using it
+try:
+    import pandas
+    pandas_available = True
+except ImportError:
+    pandas_available = False
+
+# make sure pyspark.pandas exists before using it
+try:
+    import pyspark.pandas
+    pyspark_pandas_api_available = True
+except ImportError:
+    pyspark_pandas_api_available = False
+
+# make sure databricks.koalas exists before using it
+try:
+    import databricks.koalas
+    koalas_available = True
+except ImportError:
+    koalas_available = False
+
+
+# preferentially convert pandas DataFrames to pandas-on-Spark or Koalas DataFrames first
+# since they know how to convert pandas DataFrames better than `spark.createDataFrame(df)`
+# and converting from pandas-on-Spark to Spark DataFrame has no overhead
+  
+if pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    if pyspark_pandas_api_available:
+        df = pyspark.pandas.frame.DataFrame(df)
+    elif koalas_available:
+        df = databricks.koalas.frame.DataFrame(df)
+
+# convert to pyspark.sql.dataframe.DataFrame
+if isinstance(df, pyspark.sql.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif newer_pyspark_available and isinstance(df, pyspark.sql.connect.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif pyspark_pandas_api_available and isinstance(df, pyspark.pandas.frame.DataFrame):
+    df = df.to_spark()
+elif koalas_available and isinstance(df, databricks.koalas.frame.DataFrame):
+    df = df.to_spark()
+elif pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    df = spark.createDataFrame(df)
+else:
+    msg = f"{type(df)} is not a supported type for dbt Python materialization"
+    raise Exception(msg)
+
+writer = (
+    df.write
+        .mode("overwrite")
+        .option("overwriteSchema", "true")
+        .format("delta")
+)
+
+writer.saveAsTable("`5x_dev`.`Anurag_Dev_Databricks_Python`.`stg_customers`")
+
+  
+[0m04:21:47.930184 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_customers (execute): 04:21:47.846527 => 04:21:47.929976
+[0m04:21:47.934860 [error] [Thread-1 (]: [31mUnhandled error while executing target/run/jaffle_shop_snowpark/models/staging/stg_customers.py[0m
+Databricks `http_path` or `cluster_id` of an all-purpose cluster is required for the `all_purpose_cluster` submission method.
+[0m04:21:47.941149 [debug] [Thread-1 (]: Traceback (most recent call last):
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/task/base.py", line 372, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/task/base.py", line 323, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/task/base.py", line 419, in run
+    return self.execute(compiled_node, manifest)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/task/run.py", line 291, in execute
+    result = MacroGenerator(
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/clients/jinja.py", line 330, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 763, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 61, in macro
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 298, in call
+    return __obj(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/clients/jinja.py", line 330, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 763, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 55, in macro
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 298, in call
+    return __obj(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/context/providers.py", line 1338, in submit_python_job
+    return self.adapter.submit_python_job(parsed_model, compiled_code)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 150, in execution_with_log
+    response = code_execution_function(*args)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 1287, in submit_python_job
+    job_helper = self.python_submission_helpers[submission_method](
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/databricks/python_submissions.py", line 410, in __init__
+    super().__init__(
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/databricks/python_submissions.py", line 34, in __init__
+    self.check_credentials()
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/databricks/python_submissions.py", line 475, in check_credentials
+    raise ValueError(
+ValueError: Databricks `http_path` or `cluster_id` of an all-purpose cluster is required for the `all_purpose_cluster` submission method.
+
+[0m04:21:47.947850 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9f4c8329-c0d2-45ce-b3c5-1052d50ea83c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf533feaa0>]}
+[0m04:21:47.953227 [error] [Thread-1 (]: 1 of 5 ERROR creating python table model Anurag_Dev_Databricks_Python.stg_customers  [[31mERROR[0m in 0.21s]
+[0m04:21:47.960094 [debug] [Thread-1 (]: Finished running node model.jaffle_shop_snowpark.stg_customers
+[0m04:21:47.965490 [debug] [Thread-1 (]: Began running node model.jaffle_shop_snowpark.stg_orders
+[0m04:21:47.972082 [info ] [Thread-1 (]: 2 of 5 START python table model Anurag_Dev_Databricks_Python.stg_orders ........ [RUN]
+[0m04:21:47.977701 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop_snowpark.stg_customers, now model.jaffle_shop_snowpark.stg_orders)
+[0m04:21:47.982336 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop_snowpark.stg_orders
+[0m04:21:47.990914 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop_snowpark.stg_orders"
+[0m04:21:48.005667 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_orders (compile): 04:21:47.987389 => 04:21:48.005457
+[0m04:21:48.011427 [debug] [Thread-1 (]: Began executing node model.jaffle_shop_snowpark.stg_orders
+[0m04:21:48.018648 [debug] [Thread-1 (]: Writing runtime python for node "model.jaffle_shop_snowpark.stg_orders"
+[0m04:21:48.034905 [debug] [Thread-1 (]: On model.jaffle_shop_snowpark.stg_orders: 
+  
+    
+import snowflake.snowpark.functions as f
+from snowflake.snowpark.functions import col
+
+def model(dbt, session):
+    dbt.config(materialized = "table")
+    df = dbt.ref("raw_orders")
+    df_new = df.select(df["id"].alias("order_id"),df["user_id"].alias("customer_id"), col("order_date"), col("status"))
+    return df_new
+
+
+# This part is user provided model code
+# you will need to copy the next section to run the code
+# COMMAND ----------
+# this part is dbt logic for get ref work, do not modify
+
+def ref(*args, **kwargs):
+    refs = {"raw_orders": "`5x_dev`.`Anurag_Dev_Databricks_Python`.`raw_orders`"}
+    key = '.'.join(args)
+    version = kwargs.get("v") or kwargs.get("version")
+    if version:
+        key += f".v{version}"
+    dbt_load_df_function = kwargs.get("dbt_load_df_function")
+    return dbt_load_df_function(refs[key])
+
+
+def source(*args, dbt_load_df_function):
+    sources = {}
+    key = '.'.join(args)
+    return dbt_load_df_function(sources[key])
+
+
+config_dict = {}
+
+
+class config:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @staticmethod
+    def get(key, default=None):
+        return config_dict.get(key, default)
+
+class this:
+    """dbt.this() or dbt.this.identifier"""
+    database = "5x_dev"
+    schema = "Anurag_Dev_Databricks_Python"
+    identifier = "stg_orders"
+    
+    def __repr__(self):
+        return '`5x_dev`.`Anurag_Dev_Databricks_Python`.`stg_orders`'
+
+
+class dbtObj:
+    def __init__(self, load_df_function) -> None:
+        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)
+        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)
+        self.config = config
+        self.this = this()
+        self.is_incremental = False
+
+# COMMAND ----------
+
+# how to execute python model in notebook
+# dbt = dbtObj(spark.table)
+# df = model(dbt, spark)
+
+
+# --- Autogenerated dbt materialization code. --- #
+dbt = dbtObj(spark.table)
+df = model(dbt, spark)
+
+import pyspark
+
+# make sure pyspark.sql.connect.dataframe exists before using it
+try:
+    import pyspark.sql.connect.dataframe
+    newer_pyspark_available = True
+except ImportError:
+    newer_pyspark_available = False
+
+# make sure pandas exists before using it
+try:
+    import pandas
+    pandas_available = True
+except ImportError:
+    pandas_available = False
+
+# make sure pyspark.pandas exists before using it
+try:
+    import pyspark.pandas
+    pyspark_pandas_api_available = True
+except ImportError:
+    pyspark_pandas_api_available = False
+
+# make sure databricks.koalas exists before using it
+try:
+    import databricks.koalas
+    koalas_available = True
+except ImportError:
+    koalas_available = False
+
+
+# preferentially convert pandas DataFrames to pandas-on-Spark or Koalas DataFrames first
+# since they know how to convert pandas DataFrames better than `spark.createDataFrame(df)`
+# and converting from pandas-on-Spark to Spark DataFrame has no overhead
+  
+if pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    if pyspark_pandas_api_available:
+        df = pyspark.pandas.frame.DataFrame(df)
+    elif koalas_available:
+        df = databricks.koalas.frame.DataFrame(df)
+
+# convert to pyspark.sql.dataframe.DataFrame
+if isinstance(df, pyspark.sql.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif newer_pyspark_available and isinstance(df, pyspark.sql.connect.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif pyspark_pandas_api_available and isinstance(df, pyspark.pandas.frame.DataFrame):
+    df = df.to_spark()
+elif koalas_available and isinstance(df, databricks.koalas.frame.DataFrame):
+    df = df.to_spark()
+elif pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    df = spark.createDataFrame(df)
+else:
+    msg = f"{type(df)} is not a supported type for dbt Python materialization"
+    raise Exception(msg)
+
+writer = (
+    df.write
+        .mode("overwrite")
+        .option("overwriteSchema", "true")
+        .format("delta")
+)
+
+writer.saveAsTable("`5x_dev`.`Anurag_Dev_Databricks_Python`.`stg_orders`")
+
+  
+[0m04:21:48.042731 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_orders (execute): 04:21:48.015756 => 04:21:48.042531
+[0m04:21:48.051660 [error] [Thread-1 (]: [31mUnhandled error while executing target/run/jaffle_shop_snowpark/models/staging/stg_orders.py[0m
+Databricks `http_path` or `cluster_id` of an all-purpose cluster is required for the `all_purpose_cluster` submission method.
+[0m04:21:48.057369 [debug] [Thread-1 (]: Traceback (most recent call last):
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/task/base.py", line 372, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/task/base.py", line 323, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/task/base.py", line 419, in run
+    return self.execute(compiled_node, manifest)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/task/run.py", line 291, in execute
+    result = MacroGenerator(
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/clients/jinja.py", line 330, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 763, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 61, in macro
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 298, in call
+    return __obj(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/clients/jinja.py", line 330, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 763, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 55, in macro
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 298, in call
+    return __obj(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/context/providers.py", line 1338, in submit_python_job
+    return self.adapter.submit_python_job(parsed_model, compiled_code)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 150, in execution_with_log
+    response = code_execution_function(*args)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 1287, in submit_python_job
+    job_helper = self.python_submission_helpers[submission_method](
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/databricks/python_submissions.py", line 410, in __init__
+    super().__init__(
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/databricks/python_submissions.py", line 34, in __init__
+    self.check_credentials()
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/databricks/python_submissions.py", line 475, in check_credentials
+    raise ValueError(
+ValueError: Databricks `http_path` or `cluster_id` of an all-purpose cluster is required for the `all_purpose_cluster` submission method.
+
+[0m04:21:48.062560 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9f4c8329-c0d2-45ce-b3c5-1052d50ea83c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf533fc8e0>]}
+[0m04:21:48.068203 [error] [Thread-1 (]: 2 of 5 ERROR creating python table model Anurag_Dev_Databricks_Python.stg_orders  [[31mERROR[0m in 0.09s]
+[0m04:21:48.073133 [debug] [Thread-1 (]: Finished running node model.jaffle_shop_snowpark.stg_orders
+[0m04:21:48.079585 [debug] [Thread-1 (]: Began running node model.jaffle_shop_snowpark.stg_payments
+[0m04:21:48.084620 [info ] [Thread-1 (]: 3 of 5 START python table model Anurag_Dev_Databricks_Python.stg_payments ...... [RUN]
+[0m04:21:48.092442 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop_snowpark.stg_orders, now model.jaffle_shop_snowpark.stg_payments)
+[0m04:21:48.097513 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop_snowpark.stg_payments
+[0m04:21:48.109536 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop_snowpark.stg_payments"
+[0m04:21:48.126098 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_payments (compile): 04:21:48.106102 => 04:21:48.125890
+[0m04:21:48.131339 [debug] [Thread-1 (]: Began executing node model.jaffle_shop_snowpark.stg_payments
+[0m04:21:48.139414 [debug] [Thread-1 (]: Writing runtime python for node "model.jaffle_shop_snowpark.stg_payments"
+[0m04:21:48.159095 [debug] [Thread-1 (]: On model.jaffle_shop_snowpark.stg_payments: 
+  
+    
+import snowflake.snowpark.functions as f
+from snowflake.snowpark.functions import col
+
+def model(dbt, session):
+    dbt.config(materialized = "table")
+    df = dbt.ref("raw_payments")
+    df_new= df.select(df["id"].alias("payment_id"), col("order_id"), col("payment_method"), col("amount")).with_column("amount", df["amount"] / 100)
+    return df_new
+
+
+# This part is user provided model code
+# you will need to copy the next section to run the code
+# COMMAND ----------
+# this part is dbt logic for get ref work, do not modify
+
+def ref(*args, **kwargs):
+    refs = {"raw_payments": "`5x_dev`.`Anurag_Dev_Databricks_Python`.`raw_payments`"}
+    key = '.'.join(args)
+    version = kwargs.get("v") or kwargs.get("version")
+    if version:
+        key += f".v{version}"
+    dbt_load_df_function = kwargs.get("dbt_load_df_function")
+    return dbt_load_df_function(refs[key])
+
+
+def source(*args, dbt_load_df_function):
+    sources = {}
+    key = '.'.join(args)
+    return dbt_load_df_function(sources[key])
+
+
+config_dict = {}
+
+
+class config:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @staticmethod
+    def get(key, default=None):
+        return config_dict.get(key, default)
+
+class this:
+    """dbt.this() or dbt.this.identifier"""
+    database = "5x_dev"
+    schema = "Anurag_Dev_Databricks_Python"
+    identifier = "stg_payments"
+    
+    def __repr__(self):
+        return '`5x_dev`.`Anurag_Dev_Databricks_Python`.`stg_payments`'
+
+
+class dbtObj:
+    def __init__(self, load_df_function) -> None:
+        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)
+        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)
+        self.config = config
+        self.this = this()
+        self.is_incremental = False
+
+# COMMAND ----------
+
+# how to execute python model in notebook
+# dbt = dbtObj(spark.table)
+# df = model(dbt, spark)
+
+
+# --- Autogenerated dbt materialization code. --- #
+dbt = dbtObj(spark.table)
+df = model(dbt, spark)
+
+import pyspark
+
+# make sure pyspark.sql.connect.dataframe exists before using it
+try:
+    import pyspark.sql.connect.dataframe
+    newer_pyspark_available = True
+except ImportError:
+    newer_pyspark_available = False
+
+# make sure pandas exists before using it
+try:
+    import pandas
+    pandas_available = True
+except ImportError:
+    pandas_available = False
+
+# make sure pyspark.pandas exists before using it
+try:
+    import pyspark.pandas
+    pyspark_pandas_api_available = True
+except ImportError:
+    pyspark_pandas_api_available = False
+
+# make sure databricks.koalas exists before using it
+try:
+    import databricks.koalas
+    koalas_available = True
+except ImportError:
+    koalas_available = False
+
+
+# preferentially convert pandas DataFrames to pandas-on-Spark or Koalas DataFrames first
+# since they know how to convert pandas DataFrames better than `spark.createDataFrame(df)`
+# and converting from pandas-on-Spark to Spark DataFrame has no overhead
+  
+if pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    if pyspark_pandas_api_available:
+        df = pyspark.pandas.frame.DataFrame(df)
+    elif koalas_available:
+        df = databricks.koalas.frame.DataFrame(df)
+
+# convert to pyspark.sql.dataframe.DataFrame
+if isinstance(df, pyspark.sql.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif newer_pyspark_available and isinstance(df, pyspark.sql.connect.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif pyspark_pandas_api_available and isinstance(df, pyspark.pandas.frame.DataFrame):
+    df = df.to_spark()
+elif koalas_available and isinstance(df, databricks.koalas.frame.DataFrame):
+    df = df.to_spark()
+elif pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    df = spark.createDataFrame(df)
+else:
+    msg = f"{type(df)} is not a supported type for dbt Python materialization"
+    raise Exception(msg)
+
+writer = (
+    df.write
+        .mode("overwrite")
+        .option("overwriteSchema", "true")
+        .format("delta")
+)
+
+writer.saveAsTable("`5x_dev`.`Anurag_Dev_Databricks_Python`.`stg_payments`")
+
+  
+[0m04:21:48.164007 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_payments (execute): 04:21:48.136740 => 04:21:48.163801
+[0m04:21:48.173816 [error] [Thread-1 (]: [31mUnhandled error while executing target/run/jaffle_shop_snowpark/models/staging/stg_payments.py[0m
+Databricks `http_path` or `cluster_id` of an all-purpose cluster is required for the `all_purpose_cluster` submission method.
+[0m04:21:48.179573 [debug] [Thread-1 (]: Traceback (most recent call last):
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/task/base.py", line 372, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/task/base.py", line 323, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/task/base.py", line 419, in run
+    return self.execute(compiled_node, manifest)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/task/run.py", line 291, in execute
+    result = MacroGenerator(
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/clients/jinja.py", line 330, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 763, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 61, in macro
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 298, in call
+    return __obj(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/clients/jinja.py", line 330, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 763, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 777, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 55, in macro
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/sandbox.py", line 393, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/jinja2/runtime.py", line 298, in call
+    return __obj(*args, **kwargs)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/context/providers.py", line 1338, in submit_python_job
+    return self.adapter.submit_python_job(parsed_model, compiled_code)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 150, in execution_with_log
+    response = code_execution_function(*args)
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 1287, in submit_python_job
+    job_helper = self.python_submission_helpers[submission_method](
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/databricks/python_submissions.py", line 410, in __init__
+    super().__init__(
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/databricks/python_submissions.py", line 34, in __init__
+    self.check_credentials()
+  File "/root/dbt-1.6/lib/python3.10/site-packages/dbt/adapters/databricks/python_submissions.py", line 475, in check_credentials
+    raise ValueError(
+ValueError: Databricks `http_path` or `cluster_id` of an all-purpose cluster is required for the `all_purpose_cluster` submission method.
+
+[0m04:21:48.185050 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9f4c8329-c0d2-45ce-b3c5-1052d50ea83c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf532ff040>]}
+[0m04:21:48.191383 [error] [Thread-1 (]: 3 of 5 ERROR creating python table model Anurag_Dev_Databricks_Python.stg_payments  [[31mERROR[0m in 0.09s]
+[0m04:21:48.196890 [debug] [Thread-1 (]: Finished running node model.jaffle_shop_snowpark.stg_payments
+[0m04:21:48.201534 [debug] [Thread-1 (]: Began running node model.jaffle_shop_snowpark.customers
+[0m04:21:48.206925 [info ] [Thread-1 (]: 4 of 5 SKIP relation Anurag_Dev_Databricks_Python.customers .................... [[33mSKIP[0m]
+[0m04:21:48.212408 [debug] [Thread-1 (]: Finished running node model.jaffle_shop_snowpark.customers
+[0m04:21:48.217527 [debug] [Thread-1 (]: Began running node model.jaffle_shop_snowpark.orders
+[0m04:21:48.222002 [info ] [Thread-1 (]: 5 of 5 SKIP relation Anurag_Dev_Databricks_Python.orders ....................... [[33mSKIP[0m]
+[0m04:21:48.226795 [debug] [Thread-1 (]: Finished running node model.jaffle_shop_snowpark.orders
+[0m04:21:48.232782 [debug] [MainThread]: On master: ROLLBACK
+[0m04:21:48.242268 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:21:49.026003 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m04:21:49.030531 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m04:21:49.040332 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m04:21:49.045552 [debug] [MainThread]: On master: ROLLBACK
+[0m04:21:49.049905 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m04:21:49.066215 [debug] [MainThread]: On master: Close
+[0m04:21:49.282925 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m04:21:49.291354 [debug] [MainThread]: Connection 'model.jaffle_shop_snowpark.stg_payments' was properly closed.
+[0m04:21:49.296970 [info ] [MainThread]: 
+[0m04:21:49.302118 [info ] [MainThread]: Finished running 5 table models in 0 hours 0 minutes and 13.81 seconds (13.81s).
+[0m04:21:49.306891 [debug] [MainThread]: Command end result
+[0m04:21:49.411343 [info ] [MainThread]: 
+[0m04:21:49.418453 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m04:21:49.424330 [info ] [MainThread]: 
+[0m04:21:49.429589 [error] [MainThread]:   Databricks `http_path` or `cluster_id` of an all-purpose cluster is required for the `all_purpose_cluster` submission method.
+[0m04:21:49.435331 [info ] [MainThread]: 
+[0m04:21:49.440341 [error] [MainThread]:   Databricks `http_path` or `cluster_id` of an all-purpose cluster is required for the `all_purpose_cluster` submission method.
+[0m04:21:49.445663 [info ] [MainThread]: 
+[0m04:21:49.450758 [error] [MainThread]:   Databricks `http_path` or `cluster_id` of an all-purpose cluster is required for the `all_purpose_cluster` submission method.
+[0m04:21:49.455498 [info ] [MainThread]: 
+[0m04:21:49.460085 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=2 TOTAL=5
+[0m04:21:49.465487 [debug] [MainThread]: Command `dbt run` failed at 04:21:49.465376 after 15.38 seconds
+[0m04:21:49.473359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf685c3dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf53338160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf53339360>]}
+[0m04:21:49.496104 [debug] [MainThread]: Flushing usage events
