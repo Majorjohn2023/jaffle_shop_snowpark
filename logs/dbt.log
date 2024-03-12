@@ -1,0 +1,107 @@
+[0m03:43:44.822424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cfb0a1ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cf8dd7cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cf8dd7d60>]}
+
+
+============================== 03:43:44.824704 | e9760c39-18b2-441b-a57b-24278b07d14c ==============================
+[0m03:43:44.824704 [info ] [MainThread]: Running with dbt=1.6.10
+[0m03:43:44.829560 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/efs/fs1/dbt-core-dev/427e1d61-9912-4142-8bbe-5220cf80f1cd/805a1d64-6c0c-4682-be0b-a1ea4080d49b/12de3295-704c-4a52-98ba-9574115f2c32/dbt-files', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/mnt/efs/fs1/dbt-core-dev/427e1d61-9912-4142-8bbe-5220cf80f1cd/805a1d64-6c0c-4682-be0b-a1ea4080d49b/12de3295-704c-4a52-98ba-9574115f2c32/jaffle_shop_snowpark/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt compile --output json --select customers --profile DEFAULT --profiles-dir /mnt/efs/fs1/dbt-core-dev/427e1d61-9912-4142-8bbe-5220cf80f1cd/805a1d64-6c0c-4682-be0b-a1ea4080d49b/12de3295-704c-4a52-98ba-9574115f2c32/dbt-files', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m03:43:45.875739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e9760c39-18b2-441b-a57b-24278b07d14c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8cf8dd79a0>]}
+[0m03:43:45.894650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e9760c39-18b2-441b-a57b-24278b07d14c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ce627c9d0>]}
+[0m03:43:45.898506 [info ] [MainThread]: Registered adapter: databricks=1.6.8
+[0m03:43:45.914862 [debug] [MainThread]: checksum: cb2707219def04818abb4a7bd5cbef5cb0d33b4ec9a7321738cb92f485b03034, vars: {}, profile: DEFAULT, target: , version: 1.6.10
+[0m03:43:45.921612 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:43:45.928863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e9760c39-18b2-441b-a57b-24278b07d14c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ce628c880>]}
+[0m03:43:47.251764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e9760c39-18b2-441b-a57b-24278b07d14c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ce5e67f40>]}
+[0m03:43:47.359741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e9760c39-18b2-441b-a57b-24278b07d14c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ce627d270>]}
+[0m03:43:47.364054 [info ] [MainThread]: Found 5 models, 3 seeds, 20 tests, 0 sources, 0 exposures, 0 metrics, 476 macros, 0 groups, 0 semantic models
+[0m03:43:47.368129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e9760c39-18b2-441b-a57b-24278b07d14c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ce5ece170>]}
+[0m03:43:47.377382 [info ] [MainThread]: 
+[0m03:43:47.381461 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m03:43:47.386655 [debug] [ThreadPool]: Acquiring new databricks connection 'list_5x_dev_Anurag_Dev_Databricks_Python'
+[0m03:43:47.396888 [debug] [ThreadPool]: Using databricks connection "list_5x_dev_Anurag_Dev_Databricks_Python"
+[0m03:43:47.403662 [debug] [ThreadPool]: On list_5x_dev_Anurag_Dev_Databricks_Python: GetTables(database=5x_dev, schema=Anurag_Dev_Databricks_Python, identifier=None)
+[0m03:43:47.409107 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:45:13.850389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a304dbe80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a2e07d8a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a2e07d840>]}
+
+
+============================== 03:45:13.852872 | 67e0ad55-dc5a-4bc6-a0fc-50f18bfbb505 ==============================
+[0m03:45:13.852872 [info ] [MainThread]: Running with dbt=1.6.10
+[0m03:45:13.857716 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/mnt/efs/fs1/dbt-core-dev/427e1d61-9912-4142-8bbe-5220cf80f1cd/805a1d64-6c0c-4682-be0b-a1ea4080d49b/12de3295-704c-4a52-98ba-9574115f2c32/jaffle_shop_snowpark/logs', 'profiles_dir': '/mnt/efs/fs1/dbt-core-dev/427e1d61-9912-4142-8bbe-5220cf80f1cd/805a1d64-6c0c-4682-be0b-a1ea4080d49b/12de3295-704c-4a52-98ba-9574115f2c32/dbt-files', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt compile --output json --select stg_customers --profile DEFAULT --profiles-dir /mnt/efs/fs1/dbt-core-dev/427e1d61-9912-4142-8bbe-5220cf80f1cd/805a1d64-6c0c-4682-be0b-a1ea4080d49b/12de3295-704c-4a52-98ba-9574115f2c32/dbt-files', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m03:45:14.875577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '67e0ad55-dc5a-4bc6-a0fc-50f18bfbb505', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a32825e10>]}
+[0m03:45:14.894843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '67e0ad55-dc5a-4bc6-a0fc-50f18bfbb505', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a1b508070>]}
+[0m03:45:14.900344 [info ] [MainThread]: Registered adapter: databricks=1.6.8
+[0m03:45:14.918812 [debug] [MainThread]: checksum: cb2707219def04818abb4a7bd5cbef5cb0d33b4ec9a7321738cb92f485b03034, vars: {}, profile: DEFAULT, target: , version: 1.6.10
+[0m03:45:14.977369 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:45:14.981161 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:45:14.994694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '67e0ad55-dc5a-4bc6-a0fc-50f18bfbb505', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a1b1a40d0>]}
+[0m03:45:15.118423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '67e0ad55-dc5a-4bc6-a0fc-50f18bfbb505', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a1b363d30>]}
+[0m03:45:15.122179 [info ] [MainThread]: Found 5 models, 3 seeds, 20 tests, 0 sources, 0 exposures, 0 metrics, 476 macros, 0 groups, 0 semantic models
+[0m03:45:15.126878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '67e0ad55-dc5a-4bc6-a0fc-50f18bfbb505', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a1b363ee0>]}
+[0m03:45:15.133164 [info ] [MainThread]: 
+[0m03:45:15.142031 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m03:45:15.146741 [debug] [ThreadPool]: Acquiring new databricks connection 'list_5x_dev_Anurag_Dev_Databricks_Python'
+[0m03:45:15.156519 [debug] [ThreadPool]: Using databricks connection "list_5x_dev_Anurag_Dev_Databricks_Python"
+[0m03:45:15.161527 [debug] [ThreadPool]: On list_5x_dev_Anurag_Dev_Databricks_Python: GetTables(database=5x_dev, schema=Anurag_Dev_Databricks_Python, identifier=None)
+[0m03:45:15.166409 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:45:38.939466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e40317d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e3df05960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e3df05900>]}
+
+
+============================== 03:45:38.941891 | 1ac185fc-a450-409d-a082-6ab59b7c9475 ==============================
+[0m03:45:38.941891 [info ] [MainThread]: Running with dbt=1.6.10
+[0m03:45:38.945868 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/efs/fs1/dbt-core-dev/427e1d61-9912-4142-8bbe-5220cf80f1cd/805a1d64-6c0c-4682-be0b-a1ea4080d49b/12de3295-704c-4a52-98ba-9574115f2c32/dbt-files', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/mnt/efs/fs1/dbt-core-dev/427e1d61-9912-4142-8bbe-5220cf80f1cd/805a1d64-6c0c-4682-be0b-a1ea4080d49b/12de3295-704c-4a52-98ba-9574115f2c32/jaffle_shop_snowpark/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt compile --output json --select stg_customers --profile DEFAULT --profiles-dir /mnt/efs/fs1/dbt-core-dev/427e1d61-9912-4142-8bbe-5220cf80f1cd/805a1d64-6c0c-4682-be0b-a1ea4080d49b/12de3295-704c-4a52-98ba-9574115f2c32/dbt-files', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m03:45:39.967311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1ac185fc-a450-409d-a082-6ab59b7c9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e4265de10>]}
+[0m03:45:39.986173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1ac185fc-a450-409d-a082-6ab59b7c9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e2b4500a0>]}
+[0m03:45:39.990437 [info ] [MainThread]: Registered adapter: databricks=1.6.8
+[0m03:45:40.005939 [debug] [MainThread]: checksum: cb2707219def04818abb4a7bd5cbef5cb0d33b4ec9a7321738cb92f485b03034, vars: {}, profile: DEFAULT, target: , version: 1.6.10
+[0m03:45:40.061120 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:45:40.065865 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:45:40.076514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1ac185fc-a450-409d-a082-6ab59b7c9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e2b0d80d0>]}
+[0m03:45:40.197073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1ac185fc-a450-409d-a082-6ab59b7c9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e2b09fe80>]}
+[0m03:45:40.202181 [info ] [MainThread]: Found 5 models, 3 seeds, 20 tests, 0 sources, 0 exposures, 0 metrics, 476 macros, 0 groups, 0 semantic models
+[0m03:45:40.206883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1ac185fc-a450-409d-a082-6ab59b7c9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e2b09ff10>]}
+[0m03:45:40.212040 [info ] [MainThread]: 
+[0m03:45:40.218743 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m03:45:40.223389 [debug] [ThreadPool]: Acquiring new databricks connection 'list_5x_dev_Anurag_Dev_Databricks_Python'
+[0m03:45:40.231177 [debug] [ThreadPool]: Using databricks connection "list_5x_dev_Anurag_Dev_Databricks_Python"
+[0m03:45:40.235730 [debug] [ThreadPool]: On list_5x_dev_Anurag_Dev_Databricks_Python: GetTables(database=5x_dev, schema=Anurag_Dev_Databricks_Python, identifier=None)
+[0m03:45:40.240760 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:47:20.340053 [debug] [ThreadPool]: SQL status: OK in 100.0999984741211 seconds
+[0m03:47:20.347598 [debug] [ThreadPool]: On list_5x_dev_Anurag_Dev_Databricks_Python: Close
+[0m03:47:20.577632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1ac185fc-a450-409d-a082-6ab59b7c9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e2b09f370>]}
+[0m03:47:20.582352 [info ] [MainThread]: Concurrency: 1 threads (target='default')
+[0m03:47:20.587059 [info ] [MainThread]: 
+[0m03:47:20.603474 [debug] [Thread-1 (]: Began running node model.jaffle_shop_snowpark.stg_customers
+[0m03:47:20.607543 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_5x_dev_Anurag_Dev_Databricks_Python, now model.jaffle_shop_snowpark.stg_customers)
+[0m03:47:20.612713 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop_snowpark.stg_customers
+[0m03:47:20.642104 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop_snowpark.stg_customers"
+[0m03:47:20.671039 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_customers (compile): 03:47:20.616212 => 03:47:20.670804
+[0m03:47:20.675883 [debug] [Thread-1 (]: Began executing node model.jaffle_shop_snowpark.stg_customers
+[0m03:47:20.680441 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_customers (execute): 03:47:20.680217 => 03:47:20.680236
+[0m03:47:20.685246 [debug] [Thread-1 (]: Finished running node model.jaffle_shop_snowpark.stg_customers
+[0m03:47:20.689978 [debug] [Thread-1 (]: Began running node test.jaffle_shop_snowpark.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m03:47:20.694770 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop_snowpark.stg_customers, now test.jaffle_shop_snowpark.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m03:47:20.700461 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop_snowpark.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m03:47:20.715789 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop_snowpark.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m03:47:20.735810 [debug] [Thread-1 (]: Timing info for test.jaffle_shop_snowpark.not_null_stg_customers_customer_id.e2cfb1f9aa (compile): 03:47:20.704603 => 03:47:20.735569
+[0m03:47:20.739833 [debug] [Thread-1 (]: Began executing node test.jaffle_shop_snowpark.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m03:47:20.744327 [debug] [Thread-1 (]: Timing info for test.jaffle_shop_snowpark.not_null_stg_customers_customer_id.e2cfb1f9aa (execute): 03:47:20.744113 => 03:47:20.744124
+[0m03:47:20.749609 [debug] [Thread-1 (]: Finished running node test.jaffle_shop_snowpark.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m03:47:20.753279 [debug] [Thread-1 (]: Began running node test.jaffle_shop_snowpark.unique_stg_customers_customer_id.c7614daada
+[0m03:47:20.757218 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.jaffle_shop_snowpark.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.jaffle_shop_snowpark.unique_stg_customers_customer_id.c7614daada)
+[0m03:47:20.761706 [debug] [Thread-1 (]: Began compiling node test.jaffle_shop_snowpark.unique_stg_customers_customer_id.c7614daada
+[0m03:47:20.772794 [debug] [Thread-1 (]: Writing injected SQL for node "test.jaffle_shop_snowpark.unique_stg_customers_customer_id.c7614daada"
+[0m03:47:20.789310 [debug] [Thread-1 (]: Timing info for test.jaffle_shop_snowpark.unique_stg_customers_customer_id.c7614daada (compile): 03:47:20.765928 => 03:47:20.789101
+[0m03:47:20.800173 [debug] [Thread-1 (]: Began executing node test.jaffle_shop_snowpark.unique_stg_customers_customer_id.c7614daada
+[0m03:47:20.804669 [debug] [Thread-1 (]: Timing info for test.jaffle_shop_snowpark.unique_stg_customers_customer_id.c7614daada (execute): 03:47:20.804468 => 03:47:20.804478
+[0m03:47:20.809654 [debug] [Thread-1 (]: Finished running node test.jaffle_shop_snowpark.unique_stg_customers_customer_id.c7614daada
+[0m03:47:20.814070 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:47:20.818511 [debug] [MainThread]: Connection 'test.jaffle_shop_snowpark.unique_stg_customers_customer_id.c7614daada' was properly closed.
+[0m03:47:20.823305 [debug] [MainThread]: Command end result
+[0m03:47:20.921894 [debug] [MainThread]: Excluded node 'not_null_stg_customers_customer_id' from results
+[0m03:47:20.926751 [debug] [MainThread]: Excluded node 'unique_stg_customers_customer_id' from results
+[0m03:47:20.932961 [info ] [MainThread]: {
+  "node": "stg_customers",
+  "compiled": "import snowflake.snowpark.functions as f\nfrom snowflake.snowpark.functions import col\n\ndef model(dbt, session):\n    dbt.config(materialized = \"table\")\n    df = dbt.ref(\"raw_customers\")\n    df_new= df.select(df[\"id\"].alias(\"customer_id\"), df.first_name, df.last_name)\n    return df_new\n\n\n# This part is user provided model code\n# you will need to copy the next section to run the code\n# COMMAND ----------\n# this part is dbt logic for get ref work, do not modify\n\ndef ref(*args, **kwargs):\n    refs = {\"raw_customers\": \"`5x_dev`.`Anurag_Dev_Databricks_Python`.`raw_customers`\"}\n    key = '.'.join(args)\n    version = kwargs.get(\"v\") or kwargs.get(\"version\")\n    if version:\n        key += f\".v{version}\"\n    dbt_load_df_function = kwargs.get(\"dbt_load_df_function\")\n    return dbt_load_df_function(refs[key])\n\n\ndef source(*args, dbt_load_df_function):\n    sources = {}\n    key = '.'.join(args)\n    return dbt_load_df_function(sources[key])\n\n\nconfig_dict = {}\n\n\nclass config:\n    def __init__(self, *args, **kwargs):\n        pass\n\n    @staticmethod\n    def get(key, default=None):\n        return config_dict.get(key, default)\n\nclass this:\n    \"\"\"dbt.this() or dbt.this.identifier\"\"\"\n    database = \"5x_dev\"\n    schema = \"Anurag_Dev_Databricks_Python\"\n    identifier = \"stg_customers\"\n    \n    def __repr__(self):\n        return '`5x_dev`.`Anurag_Dev_Databricks_Python`.`stg_customers`'\n\n\nclass dbtObj:\n    def __init__(self, load_df_function) -> None:\n        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)\n        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)\n        self.config = config\n        self.this = this()\n        self.is_incremental = False\n\n# COMMAND ----------\n\n# how to execute python model in notebook\n# dbt = dbtObj(spark.table)\n# df = model(dbt, spark)\n\n"
+}
+[0m03:47:20.939397 [debug] [MainThread]: Command `dbt compile` succeeded at 03:47:20.939284 after 102.01 seconds
+[0m03:47:20.948321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e40317d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e2afd5990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7e2b0a8160>]}
+[0m03:47:20.952974 [debug] [MainThread]: Flushing usage events
