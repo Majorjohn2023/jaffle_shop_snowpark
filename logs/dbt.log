@@ -796,3 +796,919 @@ ValueError: Databricks `http_path` or `cluster_id` of an all-purpose cluster is 
 [0m04:21:49.465487 [debug] [MainThread]: Command `dbt run` failed at 04:21:49.465376 after 15.38 seconds
 [0m04:21:49.473359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf685c3dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf53338160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf53339360>]}
 [0m04:21:49.496104 [debug] [MainThread]: Flushing usage events
+[0m13:18:22.988723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f999d073d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f999ac59b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f999ac59ae0>]}
+
+
+============================== 13:18:22.991707 | 50120948-0373-48be-95f3-b0b8bdd5349b ==============================
+[0m13:18:22.991707 [info ] [MainThread]: Running with dbt=1.6.10
+[0m13:18:23.000682 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/efs/fs1/dbt-core-prod/751ce5da-5f2c-4022-bfbf-68ecc591fe2a/8f25bb89-5717-4546-a4a6-141f18a19694/07b1401b-5afd-4f94-b96a-6e99b15d1e53/dbt-files', 'version_check': 'True', 'debug': 'False', 'log_path': '/mnt/efs/fs1/dbt-core-prod/751ce5da-5f2c-4022-bfbf-68ecc591fe2a/8f25bb89-5717-4546-a4a6-141f18a19694/07b1401b-5afd-4f94-b96a-6e99b15d1e53/jaffle_shop_snowpark/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt seed --profiles-dir /mnt/efs/fs1/dbt-core-prod/751ce5da-5f2c-4022-bfbf-68ecc591fe2a/8f25bb89-5717-4546-a4a6-141f18a19694/07b1401b-5afd-4f94-b96a-6e99b15d1e53/dbt-files --profile DEFAULT', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:18:24.160194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '50120948-0373-48be-95f3-b0b8bdd5349b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f999f3b3250>]}
+[0m13:18:24.181296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '50120948-0373-48be-95f3-b0b8bdd5349b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f998c207490>]}
+[0m13:18:24.189151 [info ] [MainThread]: Registered adapter: databricks=1.6.8
+[0m13:18:24.211631 [debug] [MainThread]: checksum: cb2707219def04818abb4a7bd5cbef5cb0d33b4ec9a7321738cb92f485b03034, vars: {}, profile: DEFAULT, target: , version: 1.6.10
+[0m13:18:24.243239 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m13:18:24.250802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '50120948-0373-48be-95f3-b0b8bdd5349b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f998c1efa90>]}
+[0m13:18:25.640789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '50120948-0373-48be-95f3-b0b8bdd5349b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9987db03a0>]}
+[0m13:18:25.777842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '50120948-0373-48be-95f3-b0b8bdd5349b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9987d17730>]}
+[0m13:18:25.782883 [info ] [MainThread]: Found 5 models, 3 seeds, 20 tests, 0 sources, 0 exposures, 0 metrics, 476 macros, 0 groups, 0 semantic models
+[0m13:18:25.787820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '50120948-0373-48be-95f3-b0b8bdd5349b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9987d17910>]}
+[0m13:18:25.797493 [info ] [MainThread]: 
+[0m13:18:25.806809 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:18:25.815927 [debug] [ThreadPool]: Acquiring new databricks connection 'list_5x_dev'
+[0m13:18:25.825123 [debug] [ThreadPool]: Using databricks connection "list_5x_dev"
+[0m13:18:25.832806 [debug] [ThreadPool]: On list_5x_dev: GetSchemas(database=5x_dev, schema=None)
+[0m13:18:25.836782 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:18:27.193564 [debug] [ThreadPool]: SQL status: OK in 1.3600000143051147 seconds
+[0m13:18:27.201461 [debug] [ThreadPool]: On list_5x_dev: Close
+[0m13:18:27.455009 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_5x_dev, now create_5x_dev_New_dev_Anurag)
+[0m13:18:27.460878 [debug] [ThreadPool]: Creating schema "database: "5x_dev"
+schema: "New_dev_Anurag"
+"
+[0m13:18:27.474701 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m13:18:27.480681 [debug] [ThreadPool]: Using databricks connection "create_5x_dev_New_dev_Anurag"
+[0m13:18:27.486879 [debug] [ThreadPool]: On create_5x_dev_New_dev_Anurag: /* {"app": "dbt", "dbt_version": "1.6.10", "dbt_databricks_version": "1.6.8", "databricks_sql_connector_version": "2.9.4", "profile_name": "DEFAULT", "target_name": "default", "connection_name": "create_5x_dev_New_dev_Anurag"} */
+create schema if not exists `5x_dev`.`New_dev_Anurag`
+  
+[0m13:18:27.494286 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:18:28.660076 [debug] [ThreadPool]: SQL status: OK in 1.1699999570846558 seconds
+[0m13:18:28.665487 [debug] [ThreadPool]: Spark adapter: NotImplemented: commit
+[0m13:18:28.670200 [debug] [ThreadPool]: On create_5x_dev_New_dev_Anurag: ROLLBACK
+[0m13:18:28.682423 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m13:18:28.687400 [debug] [ThreadPool]: On create_5x_dev_New_dev_Anurag: Close
+[0m13:18:28.916864 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_5x_dev_New_dev_Anurag, now list_5x_dev_New_dev_Anurag)
+[0m13:18:28.928399 [debug] [ThreadPool]: Using databricks connection "list_5x_dev_New_dev_Anurag"
+[0m13:18:28.936171 [debug] [ThreadPool]: On list_5x_dev_New_dev_Anurag: GetTables(database=5x_dev, schema=New_dev_Anurag, identifier=None)
+[0m13:18:28.945500 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:18:30.079826 [debug] [ThreadPool]: SQL status: OK in 1.1299999952316284 seconds
+[0m13:18:30.087690 [debug] [ThreadPool]: On list_5x_dev_New_dev_Anurag: Close
+[0m13:18:30.310122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '50120948-0373-48be-95f3-b0b8bdd5349b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9987b47b20>]}
+[0m13:18:30.315729 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:18:30.321119 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:18:30.337095 [info ] [MainThread]: Concurrency: 1 threads (target='default')
+[0m13:18:30.345227 [info ] [MainThread]: 
+[0m13:18:30.354668 [debug] [Thread-1 (]: Began running node seed.jaffle_shop_snowpark.raw_customers
+[0m13:18:30.366932 [info ] [Thread-1 (]: 1 of 3 START seed file New_dev_Anurag.raw_customers ............................ [RUN]
+[0m13:18:30.374661 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_5x_dev_New_dev_Anurag, now seed.jaffle_shop_snowpark.raw_customers)
+[0m13:18:30.383149 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop_snowpark.raw_customers
+[0m13:18:30.390982 [debug] [Thread-1 (]: Timing info for seed.jaffle_shop_snowpark.raw_customers (compile): 13:18:30.390658 => 13:18:30.390664
+[0m13:18:30.399461 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop_snowpark.raw_customers
+[0m13:18:30.563819 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m13:18:30.573202 [debug] [Thread-1 (]: Using databricks connection "seed.jaffle_shop_snowpark.raw_customers"
+[0m13:18:30.582232 [debug] [Thread-1 (]: On seed.jaffle_shop_snowpark.raw_customers: /* {"app": "dbt", "dbt_version": "1.6.10", "dbt_databricks_version": "1.6.8", "databricks_sql_connector_version": "2.9.4", "profile_name": "DEFAULT", "target_name": "default", "node_id": "seed.jaffle_shop_snowpark.raw_customers"} */
+
+    create table `5x_dev`.`New_dev_Anurag`.`raw_customers` (`id` bigint,`first_name` string,`last_name` string)
+    
+    using delta
+    
+    
+    
+    
+    
+  
+[0m13:18:30.590384 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:33.816606 [debug] [Thread-1 (]: SQL status: OK in 3.2300000190734863 seconds
+[0m13:18:33.938058 [debug] [Thread-1 (]: Using databricks connection "seed.jaffle_shop_snowpark.raw_customers"
+[0m13:18:33.946126 [debug] [Thread-1 (]: On seed.jaffle_shop_snowpark.raw_customers: 
+          insert overwrite `5x_dev`.`New_dev_Anurag`.`raw_customers` values
+          (cast(%s as bigint),cast(%s as string),cast(%s as string)),(cast(%s as bigint),cast(%s as string),cast(%s as string)),(cast(%s as bigint),cast(%s as string),cast(%s as string)),(cast(%s as bigint),cast(%s as string),cast(%s as string)),(cast(%s as bigint),cast(%s as string),cast(%s as string)),(cast(%s as bigint),cast(%s as string),cast(%s as string)),(cast(%s as bigint),cast(%s as string),cast(%s as string)),(cast(%s as ...
+[0m13:18:35.815417 [debug] [Thread-1 (]: SQL status: OK in 1.8600000143051147 seconds
+[0m13:18:35.829706 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.jaffle_shop_snowpark.raw_customers"
+[0m13:18:35.883398 [debug] [Thread-1 (]: Spark adapter: NotImplemented: commit
+[0m13:18:35.904067 [debug] [Thread-1 (]: Timing info for seed.jaffle_shop_snowpark.raw_customers (execute): 13:18:30.508241 => 13:18:35.903850
+[0m13:18:35.925450 [debug] [Thread-1 (]: On seed.jaffle_shop_snowpark.raw_customers: ROLLBACK
+[0m13:18:35.944986 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m13:18:35.958443 [debug] [Thread-1 (]: On seed.jaffle_shop_snowpark.raw_customers: Close
+[0m13:18:36.182308 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '50120948-0373-48be-95f3-b0b8bdd5349b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9987b2ea10>]}
+[0m13:18:36.191240 [info ] [Thread-1 (]: 1 of 3 OK loaded seed file New_dev_Anurag.raw_customers ........................ [[32mINSERT 100[0m in 5.81s]
+[0m13:18:36.201674 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop_snowpark.raw_customers
+[0m13:18:36.209113 [debug] [Thread-1 (]: Began running node seed.jaffle_shop_snowpark.raw_orders
+[0m13:18:36.217179 [info ] [Thread-1 (]: 2 of 3 START seed file New_dev_Anurag.raw_orders ............................... [RUN]
+[0m13:18:36.227622 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop_snowpark.raw_customers, now seed.jaffle_shop_snowpark.raw_orders)
+[0m13:18:36.235806 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop_snowpark.raw_orders
+[0m13:18:36.244951 [debug] [Thread-1 (]: Timing info for seed.jaffle_shop_snowpark.raw_orders (compile): 13:18:36.244608 => 13:18:36.244613
+[0m13:18:36.252834 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop_snowpark.raw_orders
+[0m13:18:36.272996 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m13:18:36.282693 [debug] [Thread-1 (]: Using databricks connection "seed.jaffle_shop_snowpark.raw_orders"
+[0m13:18:36.291471 [debug] [Thread-1 (]: On seed.jaffle_shop_snowpark.raw_orders: /* {"app": "dbt", "dbt_version": "1.6.10", "dbt_databricks_version": "1.6.8", "databricks_sql_connector_version": "2.9.4", "profile_name": "DEFAULT", "target_name": "default", "node_id": "seed.jaffle_shop_snowpark.raw_orders"} */
+
+    create table `5x_dev`.`New_dev_Anurag`.`raw_orders` (`id` bigint,`user_id` bigint,`order_date` date,`status` string)
+    
+    using delta
+    
+    
+    
+    
+    
+  
+[0m13:18:36.299992 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:39.492307 [debug] [Thread-1 (]: SQL status: OK in 3.190000057220459 seconds
+[0m13:18:39.638215 [debug] [Thread-1 (]: Using databricks connection "seed.jaffle_shop_snowpark.raw_orders"
+[0m13:18:39.647145 [debug] [Thread-1 (]: On seed.jaffle_shop_snowpark.raw_orders: 
+          insert overwrite `5x_dev`.`New_dev_Anurag`.`raw_orders` values
+          (cast(%s as bigint),cast(%s as bigint),cast(%s as date),cast(%s as string)),(cast(%s as bigint),cast(%s as bigint),cast(%s as date),cast(%s as string)),(cast(%s as bigint),cast(%s as bigint),cast(%s as date),cast(%s as string)),(cast(%s as bigint),cast(%s as bigint),cast(%s as date),cast(%s as string)),(cast(%s as bigint),cast(%s as bigint),cast(%s as date),cast(%s as string)),(cast(%s as bigint),cast(%s as bigint),cast(%s a...
+[0m13:18:41.312161 [debug] [Thread-1 (]: SQL status: OK in 1.659999966621399 seconds
+[0m13:18:41.321486 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.jaffle_shop_snowpark.raw_orders"
+[0m13:18:41.339787 [debug] [Thread-1 (]: Spark adapter: NotImplemented: commit
+[0m13:18:41.348597 [debug] [Thread-1 (]: Timing info for seed.jaffle_shop_snowpark.raw_orders (execute): 13:18:36.260912 => 13:18:41.348388
+[0m13:18:41.356170 [debug] [Thread-1 (]: On seed.jaffle_shop_snowpark.raw_orders: ROLLBACK
+[0m13:18:41.364105 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m13:18:41.373097 [debug] [Thread-1 (]: On seed.jaffle_shop_snowpark.raw_orders: Close
+[0m13:18:41.625782 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '50120948-0373-48be-95f3-b0b8bdd5349b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9987e30760>]}
+[0m13:18:41.637114 [info ] [Thread-1 (]: 2 of 3 OK loaded seed file New_dev_Anurag.raw_orders ........................... [[32mINSERT 99[0m in 5.40s]
+[0m13:18:41.649041 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop_snowpark.raw_orders
+[0m13:18:41.657604 [debug] [Thread-1 (]: Began running node seed.jaffle_shop_snowpark.raw_payments
+[0m13:18:41.665787 [info ] [Thread-1 (]: 3 of 3 START seed file New_dev_Anurag.raw_payments ............................. [RUN]
+[0m13:18:41.675028 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.jaffle_shop_snowpark.raw_orders, now seed.jaffle_shop_snowpark.raw_payments)
+[0m13:18:41.682884 [debug] [Thread-1 (]: Began compiling node seed.jaffle_shop_snowpark.raw_payments
+[0m13:18:41.691606 [debug] [Thread-1 (]: Timing info for seed.jaffle_shop_snowpark.raw_payments (compile): 13:18:41.691252 => 13:18:41.691257
+[0m13:18:41.699174 [debug] [Thread-1 (]: Began executing node seed.jaffle_shop_snowpark.raw_payments
+[0m13:18:41.718728 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m13:18:41.726494 [debug] [Thread-1 (]: Using databricks connection "seed.jaffle_shop_snowpark.raw_payments"
+[0m13:18:41.735238 [debug] [Thread-1 (]: On seed.jaffle_shop_snowpark.raw_payments: /* {"app": "dbt", "dbt_version": "1.6.10", "dbt_databricks_version": "1.6.8", "databricks_sql_connector_version": "2.9.4", "profile_name": "DEFAULT", "target_name": "default", "node_id": "seed.jaffle_shop_snowpark.raw_payments"} */
+
+    create table `5x_dev`.`New_dev_Anurag`.`raw_payments` (`id` bigint,`order_id` bigint,`payment_method` string,`amount` bigint)
+    
+    using delta
+    
+    
+    
+    
+    
+  
+[0m13:18:41.742832 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:45.461235 [debug] [Thread-1 (]: SQL status: OK in 3.7200000286102295 seconds
+[0m13:18:45.651673 [debug] [Thread-1 (]: Using databricks connection "seed.jaffle_shop_snowpark.raw_payments"
+[0m13:18:45.660038 [debug] [Thread-1 (]: On seed.jaffle_shop_snowpark.raw_payments: 
+          insert overwrite `5x_dev`.`New_dev_Anurag`.`raw_payments` values
+          (cast(%s as bigint),cast(%s as bigint),cast(%s as string),cast(%s as bigint)),(cast(%s as bigint),cast(%s as bigint),cast(%s as string),cast(%s as bigint)),(cast(%s as bigint),cast(%s as bigint),cast(%s as string),cast(%s as bigint)),(cast(%s as bigint),cast(%s as bigint),cast(%s as string),cast(%s as bigint)),(cast(%s as bigint),cast(%s as bigint),cast(%s as string),cast(%s as bigint)),(cast(%s as bigint),cast(%s as bigin...
+[0m13:18:47.409239 [debug] [Thread-1 (]: SQL status: OK in 1.7400000095367432 seconds
+[0m13:18:47.418241 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.jaffle_shop_snowpark.raw_payments"
+[0m13:18:47.443716 [debug] [Thread-1 (]: Spark adapter: NotImplemented: commit
+[0m13:18:47.453370 [debug] [Thread-1 (]: Timing info for seed.jaffle_shop_snowpark.raw_payments (execute): 13:18:41.707654 => 13:18:47.453156
+[0m13:18:47.461889 [debug] [Thread-1 (]: On seed.jaffle_shop_snowpark.raw_payments: ROLLBACK
+[0m13:18:47.470914 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m13:18:47.480381 [debug] [Thread-1 (]: On seed.jaffle_shop_snowpark.raw_payments: Close
+[0m13:18:47.716268 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '50120948-0373-48be-95f3-b0b8bdd5349b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9987e3a4d0>]}
+[0m13:18:47.725223 [info ] [Thread-1 (]: 3 of 3 OK loaded seed file New_dev_Anurag.raw_payments ......................... [[32mINSERT 113[0m in 6.04s]
+[0m13:18:47.733717 [debug] [Thread-1 (]: Finished running node seed.jaffle_shop_snowpark.raw_payments
+[0m13:18:47.744798 [debug] [MainThread]: On master: ROLLBACK
+[0m13:18:47.755796 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:18:48.614514 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m13:18:48.623329 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:18:48.632030 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:18:48.639938 [debug] [MainThread]: On master: ROLLBACK
+[0m13:18:48.647640 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m13:18:48.656989 [debug] [MainThread]: On master: Close
+[0m13:18:48.895791 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:18:48.905493 [debug] [MainThread]: Connection 'seed.jaffle_shop_snowpark.raw_payments' was properly closed.
+[0m13:18:48.915628 [info ] [MainThread]: 
+[0m13:18:48.924484 [info ] [MainThread]: Finished running 3 seeds in 0 hours 0 minutes and 23.11 seconds (23.11s).
+[0m13:18:48.933161 [debug] [MainThread]: Command end result
+[0m13:18:49.013801 [info ] [MainThread]: 
+[0m13:18:49.022081 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:18:49.031219 [info ] [MainThread]: 
+[0m13:18:49.040673 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m13:18:49.049542 [debug] [MainThread]: Command `dbt seed` succeeded at 13:18:49.049342 after 26.09 seconds
+[0m13:18:49.057909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f999d073d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9987eac460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f998c207490>]}
+[0m13:18:49.067275 [debug] [MainThread]: Flushing usage events
+[0m13:18:56.770787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcccd197dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcccad79ae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcccad79a80>]}
+
+
+============================== 13:18:56.773780 | ae96c004-0b2d-40af-b9cf-34d90abe3b84 ==============================
+[0m13:18:56.773780 [info ] [MainThread]: Running with dbt=1.6.10
+[0m13:18:56.782310 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/efs/fs1/dbt-core-prod/751ce5da-5f2c-4022-bfbf-68ecc591fe2a/8f25bb89-5717-4546-a4a6-141f18a19694/07b1401b-5afd-4f94-b96a-6e99b15d1e53/dbt-files', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/mnt/efs/fs1/dbt-core-prod/751ce5da-5f2c-4022-bfbf-68ecc591fe2a/8f25bb89-5717-4546-a4a6-141f18a19694/07b1401b-5afd-4f94-b96a-6e99b15d1e53/jaffle_shop_snowpark/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --profiles-dir /mnt/efs/fs1/dbt-core-prod/751ce5da-5f2c-4022-bfbf-68ecc591fe2a/8f25bb89-5717-4546-a4a6-141f18a19694/07b1401b-5afd-4f94-b96a-6e99b15d1e53/dbt-files --profile DEFAULT', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:18:57.919990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ae96c004-0b2d-40af-b9cf-34d90abe3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcccf4df250>]}
+[0m13:18:57.944984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ae96c004-0b2d-40af-b9cf-34d90abe3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccbc300370>]}
+[0m13:18:57.953808 [info ] [MainThread]: Registered adapter: databricks=1.6.8
+[0m13:18:57.980294 [debug] [MainThread]: checksum: cb2707219def04818abb4a7bd5cbef5cb0d33b4ec9a7321738cb92f485b03034, vars: {}, profile: DEFAULT, target: , version: 1.6.10
+[0m13:18:58.054976 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:18:58.063824 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:18:58.080133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ae96c004-0b2d-40af-b9cf-34d90abe3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccb7f280d0>]}
+[0m13:18:58.179763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ae96c004-0b2d-40af-b9cf-34d90abe3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccbc163e50>]}
+[0m13:18:58.188713 [info ] [MainThread]: Found 5 models, 3 seeds, 20 tests, 0 sources, 0 exposures, 0 metrics, 476 macros, 0 groups, 0 semantic models
+[0m13:18:58.197933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ae96c004-0b2d-40af-b9cf-34d90abe3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccbc163ee0>]}
+[0m13:18:58.208783 [info ] [MainThread]: 
+[0m13:18:58.217350 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:18:58.227698 [debug] [ThreadPool]: Acquiring new databricks connection 'list_5x_dev'
+[0m13:18:58.235008 [debug] [ThreadPool]: Using databricks connection "list_5x_dev"
+[0m13:18:58.243116 [debug] [ThreadPool]: On list_5x_dev: GetSchemas(database=5x_dev, schema=None)
+[0m13:18:58.251169 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:18:59.418350 [debug] [ThreadPool]: SQL status: OK in 1.1699999570846558 seconds
+[0m13:18:59.431178 [debug] [ThreadPool]: On list_5x_dev: Close
+[0m13:18:59.669223 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_5x_dev, now list_5x_dev_New_dev_Anurag)
+[0m13:18:59.683769 [debug] [ThreadPool]: Using databricks connection "list_5x_dev_New_dev_Anurag"
+[0m13:18:59.692364 [debug] [ThreadPool]: On list_5x_dev_New_dev_Anurag: GetTables(database=5x_dev, schema=New_dev_Anurag, identifier=None)
+[0m13:18:59.700126 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:19:00.839388 [debug] [ThreadPool]: SQL status: OK in 1.1399999856948853 seconds
+[0m13:19:00.850312 [debug] [ThreadPool]: On list_5x_dev_New_dev_Anurag: Close
+[0m13:19:01.073048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ae96c004-0b2d-40af-b9cf-34d90abe3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccbc163100>]}
+[0m13:19:01.081920 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:19:01.092033 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:19:01.100288 [info ] [MainThread]: Concurrency: 1 threads (target='default')
+[0m13:19:01.108282 [info ] [MainThread]: 
+[0m13:19:01.118330 [debug] [Thread-1 (]: Began running node model.jaffle_shop_snowpark.stg_customers
+[0m13:19:01.127160 [info ] [Thread-1 (]: 1 of 5 START python table model New_dev_Anurag.stg_customers ................... [RUN]
+[0m13:19:01.136184 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_5x_dev_New_dev_Anurag, now model.jaffle_shop_snowpark.stg_customers)
+[0m13:19:01.144130 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop_snowpark.stg_customers
+[0m13:19:01.179455 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop_snowpark.stg_customers"
+[0m13:19:01.218708 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_customers (compile): 13:19:01.152020 => 13:19:01.218330
+[0m13:19:01.227977 [debug] [Thread-1 (]: Began executing node model.jaffle_shop_snowpark.stg_customers
+[0m13:19:01.272312 [debug] [Thread-1 (]: Writing runtime python for node "model.jaffle_shop_snowpark.stg_customers"
+[0m13:19:01.298492 [debug] [Thread-1 (]: On model.jaffle_shop_snowpark.stg_customers: 
+  
+    
+import snowflake.snowpark.functions as f
+from snowflake.snowpark.functions import col
+
+def model(dbt, session):
+    dbt.config(materialized = "table")
+    df = dbt.ref("raw_customers")
+    df_new= df.select(df["id"].alias("customer_id"), df.first_name, df.last_name)
+    return df_new
+
+
+# This part is user provided model code
+# you will need to copy the next section to run the code
+# COMMAND ----------
+# this part is dbt logic for get ref work, do not modify
+
+def ref(*args, **kwargs):
+    refs = {"raw_customers": "`5x_dev`.`New_dev_Anurag`.`raw_customers`"}
+    key = '.'.join(args)
+    version = kwargs.get("v") or kwargs.get("version")
+    if version:
+        key += f".v{version}"
+    dbt_load_df_function = kwargs.get("dbt_load_df_function")
+    return dbt_load_df_function(refs[key])
+
+
+def source(*args, dbt_load_df_function):
+    sources = {}
+    key = '.'.join(args)
+    return dbt_load_df_function(sources[key])
+
+
+config_dict = {}
+
+
+class config:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @staticmethod
+    def get(key, default=None):
+        return config_dict.get(key, default)
+
+class this:
+    """dbt.this() or dbt.this.identifier"""
+    database = "5x_dev"
+    schema = "New_dev_Anurag"
+    identifier = "stg_customers"
+    
+    def __repr__(self):
+        return '`5x_dev`.`New_dev_Anurag`.`stg_customers`'
+
+
+class dbtObj:
+    def __init__(self, load_df_function) -> None:
+        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)
+        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)
+        self.config = config
+        self.this = this()
+        self.is_incremental = False
+
+# COMMAND ----------
+
+# how to execute python model in notebook
+# dbt = dbtObj(spark.table)
+# df = model(dbt, spark)
+
+
+# --- Autogenerated dbt materialization code. --- #
+dbt = dbtObj(spark.table)
+df = model(dbt, spark)
+
+import pyspark
+
+# make sure pyspark.sql.connect.dataframe exists before using it
+try:
+    import pyspark.sql.connect.dataframe
+    newer_pyspark_available = True
+except ImportError:
+    newer_pyspark_available = False
+
+# make sure pandas exists before using it
+try:
+    import pandas
+    pandas_available = True
+except ImportError:
+    pandas_available = False
+
+# make sure pyspark.pandas exists before using it
+try:
+    import pyspark.pandas
+    pyspark_pandas_api_available = True
+except ImportError:
+    pyspark_pandas_api_available = False
+
+# make sure databricks.koalas exists before using it
+try:
+    import databricks.koalas
+    koalas_available = True
+except ImportError:
+    koalas_available = False
+
+
+# preferentially convert pandas DataFrames to pandas-on-Spark or Koalas DataFrames first
+# since they know how to convert pandas DataFrames better than `spark.createDataFrame(df)`
+# and converting from pandas-on-Spark to Spark DataFrame has no overhead
+  
+if pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    if pyspark_pandas_api_available:
+        df = pyspark.pandas.frame.DataFrame(df)
+    elif koalas_available:
+        df = databricks.koalas.frame.DataFrame(df)
+
+# convert to pyspark.sql.dataframe.DataFrame
+if isinstance(df, pyspark.sql.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif newer_pyspark_available and isinstance(df, pyspark.sql.connect.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif pyspark_pandas_api_available and isinstance(df, pyspark.pandas.frame.DataFrame):
+    df = df.to_spark()
+elif koalas_available and isinstance(df, databricks.koalas.frame.DataFrame):
+    df = df.to_spark()
+elif pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    df = spark.createDataFrame(df)
+else:
+    msg = f"{type(df)} is not a supported type for dbt Python materialization"
+    raise Exception(msg)
+
+writer = (
+    df.write
+        .mode("overwrite")
+        .option("overwriteSchema", "true")
+        .format("delta")
+)
+
+writer.saveAsTable("`5x_dev`.`New_dev_Anurag`.`stg_customers`")
+
+  
+[0m13:19:03.724282 [info ] [Thread-1 (]: Databricks adapter: Job submission response={'id': 'ee246c71b52149f3935a43ea5830da22'}
+[0m13:19:15.341328 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_customers (execute): 13:19:01.235980 => 13:19:15.340689
+[0m13:19:15.355157 [debug] [Thread-1 (]: Runtime Error in model stg_customers (models/staging/stg_customers.py)
+  Python model failed with traceback as:
+  ---------------------------------------------------------------------------
+  ModuleNotFoundError                       Traceback (most recent call last)
+  File ~/.ipykernel/14549/command--1-1692788700:1
+  ----> 1 import snowflake.snowpark.functions as f
+        2 from snowflake.snowpark.functions import col
+        4 def model(dbt, session):
+  
+  ModuleNotFoundError: No module named 'snowflake'
+[0m13:19:15.363624 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ae96c004-0b2d-40af-b9cf-34d90abe3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccb7ff4130>]}
+[0m13:19:15.371954 [error] [Thread-1 (]: 1 of 5 ERROR creating python table model New_dev_Anurag.stg_customers .......... [[31mERROR[0m in 14.23s]
+[0m13:19:15.380196 [debug] [Thread-1 (]: Finished running node model.jaffle_shop_snowpark.stg_customers
+[0m13:19:15.388022 [debug] [Thread-1 (]: Began running node model.jaffle_shop_snowpark.stg_orders
+[0m13:19:15.396035 [info ] [Thread-1 (]: 2 of 5 START python table model New_dev_Anurag.stg_orders ...................... [RUN]
+[0m13:19:15.404609 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop_snowpark.stg_customers, now model.jaffle_shop_snowpark.stg_orders)
+[0m13:19:15.412480 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop_snowpark.stg_orders
+[0m13:19:15.425521 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop_snowpark.stg_orders"
+[0m13:19:15.442404 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_orders (compile): 13:19:15.420561 => 13:19:15.442060
+[0m13:19:15.450783 [debug] [Thread-1 (]: Began executing node model.jaffle_shop_snowpark.stg_orders
+[0m13:19:15.462341 [debug] [Thread-1 (]: Writing runtime python for node "model.jaffle_shop_snowpark.stg_orders"
+[0m13:19:15.479367 [debug] [Thread-1 (]: On model.jaffle_shop_snowpark.stg_orders: 
+  
+    
+import snowflake.snowpark.functions as f
+from snowflake.snowpark.functions import col
+
+def model(dbt, session):
+    dbt.config(materialized = "table")
+    df = dbt.ref("raw_orders")
+    df_new = df.select(df["id"].alias("order_id"),df["user_id"].alias("customer_id"), col("order_date"), col("status"))
+    return df_new
+
+
+# This part is user provided model code
+# you will need to copy the next section to run the code
+# COMMAND ----------
+# this part is dbt logic for get ref work, do not modify
+
+def ref(*args, **kwargs):
+    refs = {"raw_orders": "`5x_dev`.`New_dev_Anurag`.`raw_orders`"}
+    key = '.'.join(args)
+    version = kwargs.get("v") or kwargs.get("version")
+    if version:
+        key += f".v{version}"
+    dbt_load_df_function = kwargs.get("dbt_load_df_function")
+    return dbt_load_df_function(refs[key])
+
+
+def source(*args, dbt_load_df_function):
+    sources = {}
+    key = '.'.join(args)
+    return dbt_load_df_function(sources[key])
+
+
+config_dict = {}
+
+
+class config:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @staticmethod
+    def get(key, default=None):
+        return config_dict.get(key, default)
+
+class this:
+    """dbt.this() or dbt.this.identifier"""
+    database = "5x_dev"
+    schema = "New_dev_Anurag"
+    identifier = "stg_orders"
+    
+    def __repr__(self):
+        return '`5x_dev`.`New_dev_Anurag`.`stg_orders`'
+
+
+class dbtObj:
+    def __init__(self, load_df_function) -> None:
+        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)
+        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)
+        self.config = config
+        self.this = this()
+        self.is_incremental = False
+
+# COMMAND ----------
+
+# how to execute python model in notebook
+# dbt = dbtObj(spark.table)
+# df = model(dbt, spark)
+
+
+# --- Autogenerated dbt materialization code. --- #
+dbt = dbtObj(spark.table)
+df = model(dbt, spark)
+
+import pyspark
+
+# make sure pyspark.sql.connect.dataframe exists before using it
+try:
+    import pyspark.sql.connect.dataframe
+    newer_pyspark_available = True
+except ImportError:
+    newer_pyspark_available = False
+
+# make sure pandas exists before using it
+try:
+    import pandas
+    pandas_available = True
+except ImportError:
+    pandas_available = False
+
+# make sure pyspark.pandas exists before using it
+try:
+    import pyspark.pandas
+    pyspark_pandas_api_available = True
+except ImportError:
+    pyspark_pandas_api_available = False
+
+# make sure databricks.koalas exists before using it
+try:
+    import databricks.koalas
+    koalas_available = True
+except ImportError:
+    koalas_available = False
+
+
+# preferentially convert pandas DataFrames to pandas-on-Spark or Koalas DataFrames first
+# since they know how to convert pandas DataFrames better than `spark.createDataFrame(df)`
+# and converting from pandas-on-Spark to Spark DataFrame has no overhead
+  
+if pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    if pyspark_pandas_api_available:
+        df = pyspark.pandas.frame.DataFrame(df)
+    elif koalas_available:
+        df = databricks.koalas.frame.DataFrame(df)
+
+# convert to pyspark.sql.dataframe.DataFrame
+if isinstance(df, pyspark.sql.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif newer_pyspark_available and isinstance(df, pyspark.sql.connect.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif pyspark_pandas_api_available and isinstance(df, pyspark.pandas.frame.DataFrame):
+    df = df.to_spark()
+elif koalas_available and isinstance(df, databricks.koalas.frame.DataFrame):
+    df = df.to_spark()
+elif pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    df = spark.createDataFrame(df)
+else:
+    msg = f"{type(df)} is not a supported type for dbt Python materialization"
+    raise Exception(msg)
+
+writer = (
+    df.write
+        .mode("overwrite")
+        .option("overwriteSchema", "true")
+        .format("delta")
+)
+
+writer.saveAsTable("`5x_dev`.`New_dev_Anurag`.`stg_orders`")
+
+  
+[0m13:19:17.991768 [info ] [Thread-1 (]: Databricks adapter: Job submission response={'id': 'be1a52e8ffc2433f958ae999db1910c4'}
+[0m13:19:29.601919 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_orders (execute): 13:19:15.458795 => 13:19:29.601319
+[0m13:19:29.604354 [debug] [Thread-1 (]: Runtime Error in model stg_orders (models/staging/stg_orders.py)
+  Python model failed with traceback as:
+  ---------------------------------------------------------------------------
+  ModuleNotFoundError                       Traceback (most recent call last)
+  File ~/.ipykernel/14615/command--1-2965480349:1
+  ----> 1 import snowflake.snowpark.functions as f
+        2 from snowflake.snowpark.functions import col
+        4 def model(dbt, session):
+  
+  ModuleNotFoundError: No module named 'snowflake'
+[0m13:19:29.612790 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ae96c004-0b2d-40af-b9cf-34d90abe3b84', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fccb7e1aa70>]}
+[0m13:19:29.621134 [error] [Thread-1 (]: 2 of 5 ERROR creating python table model New_dev_Anurag.stg_orders ............. [[31mERROR[0m in 14.21s]
+[0m13:19:29.630176 [debug] [Thread-1 (]: Finished running node model.jaffle_shop_snowpark.stg_orders
+[0m13:19:29.637821 [debug] [Thread-1 (]: Began running node model.jaffle_shop_snowpark.stg_payments
+[0m13:19:29.646086 [info ] [Thread-1 (]: 3 of 5 START python table model New_dev_Anurag.stg_payments .................... [RUN]
+[0m13:19:29.653795 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop_snowpark.stg_orders, now model.jaffle_shop_snowpark.stg_payments)
+[0m13:19:29.661256 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop_snowpark.stg_payments
+[0m13:19:29.674051 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop_snowpark.stg_payments"
+[0m13:19:29.694258 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_payments (compile): 13:19:29.669296 => 13:19:29.693900
+[0m13:19:29.701665 [debug] [Thread-1 (]: Began executing node model.jaffle_shop_snowpark.stg_payments
+[0m13:19:29.712766 [debug] [Thread-1 (]: Writing runtime python for node "model.jaffle_shop_snowpark.stg_payments"
+[0m13:19:29.731231 [debug] [Thread-1 (]: On model.jaffle_shop_snowpark.stg_payments: 
+  
+    
+import snowflake.snowpark.functions as f
+from snowflake.snowpark.functions import col
+
+def model(dbt, session):
+    dbt.config(materialized = "table")
+    df = dbt.ref("raw_payments")
+    df_new= df.select(df["id"].alias("payment_id"), col("order_id"), col("payment_method"), col("amount")).with_column("amount", df["amount"] / 100)
+    return df_new
+
+
+# This part is user provided model code
+# you will need to copy the next section to run the code
+# COMMAND ----------
+# this part is dbt logic for get ref work, do not modify
+
+def ref(*args, **kwargs):
+    refs = {"raw_payments": "`5x_dev`.`New_dev_Anurag`.`raw_payments`"}
+    key = '.'.join(args)
+    version = kwargs.get("v") or kwargs.get("version")
+    if version:
+        key += f".v{version}"
+    dbt_load_df_function = kwargs.get("dbt_load_df_function")
+    return dbt_load_df_function(refs[key])
+
+
+def source(*args, dbt_load_df_function):
+    sources = {}
+    key = '.'.join(args)
+    return dbt_load_df_function(sources[key])
+
+
+config_dict = {}
+
+
+class config:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @staticmethod
+    def get(key, default=None):
+        return config_dict.get(key, default)
+
+class this:
+    """dbt.this() or dbt.this.identifier"""
+    database = "5x_dev"
+    schema = "New_dev_Anurag"
+    identifier = "stg_payments"
+    
+    def __repr__(self):
+        return '`5x_dev`.`New_dev_Anurag`.`stg_payments`'
+
+
+class dbtObj:
+    def __init__(self, load_df_function) -> None:
+        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)
+        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)
+        self.config = config
+        self.this = this()
+        self.is_incremental = False
+
+# COMMAND ----------
+
+# how to execute python model in notebook
+# dbt = dbtObj(spark.table)
+# df = model(dbt, spark)
+
+
+# --- Autogenerated dbt materialization code. --- #
+dbt = dbtObj(spark.table)
+df = model(dbt, spark)
+
+import pyspark
+
+# make sure pyspark.sql.connect.dataframe exists before using it
+try:
+    import pyspark.sql.connect.dataframe
+    newer_pyspark_available = True
+except ImportError:
+    newer_pyspark_available = False
+
+# make sure pandas exists before using it
+try:
+    import pandas
+    pandas_available = True
+except ImportError:
+    pandas_available = False
+
+# make sure pyspark.pandas exists before using it
+try:
+    import pyspark.pandas
+    pyspark_pandas_api_available = True
+except ImportError:
+    pyspark_pandas_api_available = False
+
+# make sure databricks.koalas exists before using it
+try:
+    import databricks.koalas
+    koalas_available = True
+except ImportError:
+    koalas_available = False
+
+
+# preferentially convert pandas DataFrames to pandas-on-Spark or Koalas DataFrames first
+# since they know how to convert pandas DataFrames better than `spark.createDataFrame(df)`
+# and converting from pandas-on-Spark to Spark DataFrame has no overhead
+  
+if pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    if pyspark_pandas_api_available:
+        df = pyspark.pandas.frame.DataFrame(df)
+    elif koalas_available:
+        df = databricks.koalas.frame.DataFrame(df)
+
+# convert to pyspark.sql.dataframe.DataFrame
+if isinstance(df, pyspark.sql.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif newer_pyspark_available and isinstance(df, pyspark.sql.connect.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif pyspark_pandas_api_available and isinstance(df, pyspark.pandas.frame.DataFrame):
+    df = df.to_spark()
+elif koalas_available and isinstance(df, databricks.koalas.frame.DataFrame):
+    df = df.to_spark()
+elif pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    df = spark.createDataFrame(df)
+else:
+    msg = f"{type(df)} is not a supported type for dbt Python materialization"
+    raise Exception(msg)
+
+writer = (
+    df.write
+        .mode("overwrite")
+        .option("overwriteSchema", "true")
+        .format("delta")
+)
+
+writer.saveAsTable("`5x_dev`.`New_dev_Anurag`.`stg_payments`")
+
+  
+[0m13:19:32.243932 [info ] [Thread-1 (]: Databricks adapter: Job submission response={'id': '75c0de98c2684bf7afb6a5ac7b85a5fe'}
+[0m13:19:32.699116 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:19:33.558845 [error] [MainThread]: CANCEL query model.jaffle_shop_snowpark.stg_payments ........................... [[31mCANCEL[0m]
+[0m13:21:30.238905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e6a277e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e67e5da20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e67e5d9c0>]}
+
+
+============================== 13:21:30.241511 | 328fc16b-13eb-456e-bf0a-038ceeb294ad ==============================
+[0m13:21:30.241511 [info ] [MainThread]: Running with dbt=1.6.10
+[0m13:21:30.250204 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/mnt/efs/fs1/dbt-core-prod/751ce5da-5f2c-4022-bfbf-68ecc591fe2a/8f25bb89-5717-4546-a4a6-141f18a19694/07b1401b-5afd-4f94-b96a-6e99b15d1e53/jaffle_shop_snowpark/logs', 'profiles_dir': '/mnt/efs/fs1/dbt-core-prod/751ce5da-5f2c-4022-bfbf-68ecc591fe2a/8f25bb89-5717-4546-a4a6-141f18a19694/07b1401b-5afd-4f94-b96a-6e99b15d1e53/dbt-files', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run --select stg_customers --profiles-dir /mnt/efs/fs1/dbt-core-prod/751ce5da-5f2c-4022-bfbf-68ecc591fe2a/8f25bb89-5717-4546-a4a6-141f18a19694/07b1401b-5afd-4f94-b96a-6e99b15d1e53/dbt-files --profile DEFAULT', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:21:31.325001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '328fc16b-13eb-456e-bf0a-038ceeb294ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e6c653c10>]}
+[0m13:21:31.349290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '328fc16b-13eb-456e-bf0a-038ceeb294ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e554003d0>]}
+[0m13:21:31.361729 [info ] [MainThread]: Registered adapter: databricks=1.6.8
+[0m13:21:31.383579 [debug] [MainThread]: checksum: cb2707219def04818abb4a7bd5cbef5cb0d33b4ec9a7321738cb92f485b03034, vars: {}, profile: DEFAULT, target: , version: 1.6.10
+[0m13:21:31.445026 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:21:31.453536 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:21:31.468396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '328fc16b-13eb-456e-bf0a-038ceeb294ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e550b00d0>]}
+[0m13:21:31.569079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '328fc16b-13eb-456e-bf0a-038ceeb294ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e55073e20>]}
+[0m13:21:31.577182 [info ] [MainThread]: Found 5 models, 3 seeds, 20 tests, 0 sources, 0 exposures, 0 metrics, 476 macros, 0 groups, 0 semantic models
+[0m13:21:31.585192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '328fc16b-13eb-456e-bf0a-038ceeb294ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e55073eb0>]}
+[0m13:21:31.593518 [info ] [MainThread]: 
+[0m13:21:31.601990 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:21:31.610224 [debug] [ThreadPool]: Acquiring new databricks connection 'list_5x_dev'
+[0m13:21:31.617985 [debug] [ThreadPool]: Using databricks connection "list_5x_dev"
+[0m13:21:31.626202 [debug] [ThreadPool]: On list_5x_dev: GetSchemas(database=5x_dev, schema=None)
+[0m13:21:31.635208 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:21:33.447476 [debug] [ThreadPool]: SQL status: OK in 1.809999942779541 seconds
+[0m13:21:33.457790 [debug] [ThreadPool]: On list_5x_dev: Close
+[0m13:21:33.684969 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_5x_dev, now list_5x_dev_New_dev_Anurag)
+[0m13:21:33.697765 [debug] [ThreadPool]: Using databricks connection "list_5x_dev_New_dev_Anurag"
+[0m13:21:33.706769 [debug] [ThreadPool]: On list_5x_dev_New_dev_Anurag: GetTables(database=5x_dev, schema=New_dev_Anurag, identifier=None)
+[0m13:21:33.714568 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:21:34.851915 [debug] [ThreadPool]: SQL status: OK in 1.1399999856948853 seconds
+[0m13:21:34.862138 [debug] [ThreadPool]: On list_5x_dev_New_dev_Anurag: Close
+[0m13:21:35.090359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '328fc16b-13eb-456e-bf0a-038ceeb294ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e55070850>]}
+[0m13:21:35.099063 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:21:35.107626 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:21:35.116171 [info ] [MainThread]: Concurrency: 1 threads (target='default')
+[0m13:21:35.124459 [info ] [MainThread]: 
+[0m13:21:35.134411 [debug] [Thread-1 (]: Began running node model.jaffle_shop_snowpark.stg_customers
+[0m13:21:35.142080 [info ] [Thread-1 (]: 1 of 1 START python table model New_dev_Anurag.stg_customers ................... [RUN]
+[0m13:21:35.150203 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_5x_dev_New_dev_Anurag, now model.jaffle_shop_snowpark.stg_customers)
+[0m13:21:35.158650 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop_snowpark.stg_customers
+[0m13:21:35.191432 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop_snowpark.stg_customers"
+[0m13:21:35.213274 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_customers (compile): 13:21:35.165681 => 13:21:35.213052
+[0m13:21:35.221052 [debug] [Thread-1 (]: Began executing node model.jaffle_shop_snowpark.stg_customers
+[0m13:21:35.262606 [debug] [Thread-1 (]: Writing runtime python for node "model.jaffle_shop_snowpark.stg_customers"
+[0m13:21:35.281967 [debug] [Thread-1 (]: On model.jaffle_shop_snowpark.stg_customers: 
+  
+    
+import snowflake.snowpark.functions as f
+from snowflake.snowpark.functions import col
+
+def model(dbt, session):
+    dbt.config(materialized = "table")
+    df = dbt.ref("raw_customers")
+    df_new= df.select(df["id"].alias("customer_id"), df.first_name, df.last_name)
+    return df_new
+
+
+# This part is user provided model code
+# you will need to copy the next section to run the code
+# COMMAND ----------
+# this part is dbt logic for get ref work, do not modify
+
+def ref(*args, **kwargs):
+    refs = {"raw_customers": "`5x_dev`.`New_dev_Anurag`.`raw_customers`"}
+    key = '.'.join(args)
+    version = kwargs.get("v") or kwargs.get("version")
+    if version:
+        key += f".v{version}"
+    dbt_load_df_function = kwargs.get("dbt_load_df_function")
+    return dbt_load_df_function(refs[key])
+
+
+def source(*args, dbt_load_df_function):
+    sources = {}
+    key = '.'.join(args)
+    return dbt_load_df_function(sources[key])
+
+
+config_dict = {}
+
+
+class config:
+    def __init__(self, *args, **kwargs):
+        pass
+
+    @staticmethod
+    def get(key, default=None):
+        return config_dict.get(key, default)
+
+class this:
+    """dbt.this() or dbt.this.identifier"""
+    database = "5x_dev"
+    schema = "New_dev_Anurag"
+    identifier = "stg_customers"
+    
+    def __repr__(self):
+        return '`5x_dev`.`New_dev_Anurag`.`stg_customers`'
+
+
+class dbtObj:
+    def __init__(self, load_df_function) -> None:
+        self.source = lambda *args: source(*args, dbt_load_df_function=load_df_function)
+        self.ref = lambda *args, **kwargs: ref(*args, **kwargs, dbt_load_df_function=load_df_function)
+        self.config = config
+        self.this = this()
+        self.is_incremental = False
+
+# COMMAND ----------
+
+# how to execute python model in notebook
+# dbt = dbtObj(spark.table)
+# df = model(dbt, spark)
+
+
+# --- Autogenerated dbt materialization code. --- #
+dbt = dbtObj(spark.table)
+df = model(dbt, spark)
+
+import pyspark
+
+# make sure pyspark.sql.connect.dataframe exists before using it
+try:
+    import pyspark.sql.connect.dataframe
+    newer_pyspark_available = True
+except ImportError:
+    newer_pyspark_available = False
+
+# make sure pandas exists before using it
+try:
+    import pandas
+    pandas_available = True
+except ImportError:
+    pandas_available = False
+
+# make sure pyspark.pandas exists before using it
+try:
+    import pyspark.pandas
+    pyspark_pandas_api_available = True
+except ImportError:
+    pyspark_pandas_api_available = False
+
+# make sure databricks.koalas exists before using it
+try:
+    import databricks.koalas
+    koalas_available = True
+except ImportError:
+    koalas_available = False
+
+
+# preferentially convert pandas DataFrames to pandas-on-Spark or Koalas DataFrames first
+# since they know how to convert pandas DataFrames better than `spark.createDataFrame(df)`
+# and converting from pandas-on-Spark to Spark DataFrame has no overhead
+  
+if pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    if pyspark_pandas_api_available:
+        df = pyspark.pandas.frame.DataFrame(df)
+    elif koalas_available:
+        df = databricks.koalas.frame.DataFrame(df)
+
+# convert to pyspark.sql.dataframe.DataFrame
+if isinstance(df, pyspark.sql.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif newer_pyspark_available and isinstance(df, pyspark.sql.connect.dataframe.DataFrame):
+    pass  # since it is already a Spark DataFrame
+elif pyspark_pandas_api_available and isinstance(df, pyspark.pandas.frame.DataFrame):
+    df = df.to_spark()
+elif koalas_available and isinstance(df, databricks.koalas.frame.DataFrame):
+    df = df.to_spark()
+elif pandas_available and isinstance(df, pandas.core.frame.DataFrame):
+    df = spark.createDataFrame(df)
+else:
+    msg = f"{type(df)} is not a supported type for dbt Python materialization"
+    raise Exception(msg)
+
+writer = (
+    df.write
+        .mode("overwrite")
+        .option("overwriteSchema", "true")
+        .format("delta")
+)
+
+writer.saveAsTable("`5x_dev`.`New_dev_Anurag`.`stg_customers`")
+
+  
+[0m13:21:37.713951 [info ] [Thread-1 (]: Databricks adapter: Job submission response={'id': '50c60035c0254abd903d401ee43314c9'}
+[0m13:21:49.380140 [debug] [Thread-1 (]: Timing info for model.jaffle_shop_snowpark.stg_customers (execute): 13:21:35.228939 => 13:21:49.379790
+[0m13:21:49.402015 [debug] [Thread-1 (]: Runtime Error in model stg_customers (models/staging/stg_customers.py)
+  Python model failed with traceback as:
+  ---------------------------------------------------------------------------
+  ModuleNotFoundError                       Traceback (most recent call last)
+  File ~/.ipykernel/14972/command--1-1692788700:1
+  ----> 1 import snowflake.snowpark.functions as f
+        2 from snowflake.snowpark.functions import col
+        4 def model(dbt, session):
+  
+  ModuleNotFoundError: No module named 'snowflake'
+[0m13:21:49.410842 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '328fc16b-13eb-456e-bf0a-038ceeb294ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e54f741f0>]}
+[0m13:21:49.418378 [error] [Thread-1 (]: 1 of 1 ERROR creating python table model New_dev_Anurag.stg_customers .......... [[31mERROR[0m in 14.26s]
+[0m13:21:49.426273 [debug] [Thread-1 (]: Finished running node model.jaffle_shop_snowpark.stg_customers
+[0m13:21:49.435198 [debug] [MainThread]: On master: ROLLBACK
+[0m13:21:49.443357 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:21:50.261158 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m13:21:50.268768 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:21:50.276092 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:21:50.283686 [debug] [MainThread]: On master: ROLLBACK
+[0m13:21:50.290997 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m13:21:50.299052 [debug] [MainThread]: On master: Close
+[0m13:21:50.534361 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:21:50.542435 [debug] [MainThread]: Connection 'model.jaffle_shop_snowpark.stg_customers' was properly closed.
+[0m13:21:50.551028 [info ] [MainThread]: 
+[0m13:21:50.558910 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 18.95 seconds (18.95s).
+[0m13:21:50.566594 [debug] [MainThread]: Command end result
+[0m13:21:50.656552 [info ] [MainThread]: 
+[0m13:21:50.664568 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m13:21:50.672365 [info ] [MainThread]: 
+[0m13:21:50.681040 [error] [MainThread]:   Runtime Error in model stg_customers (models/staging/stg_customers.py)
+  Python model failed with traceback as:
+  ---------------------------------------------------------------------------
+  ModuleNotFoundError                       Traceback (most recent call last)
+  File ~/.ipykernel/14972/command--1-1692788700:1
+  ----> 1 import snowflake.snowpark.functions as f
+        2 from snowflake.snowpark.functions import col
+        4 def model(dbt, session):
+  
+  ModuleNotFoundError: No module named 'snowflake'
+[0m13:21:50.689912 [info ] [MainThread]: 
+[0m13:21:50.697297 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m13:21:50.705994 [debug] [MainThread]: Command `dbt run` failed at 13:21:50.705871 after 20.48 seconds
+[0m13:21:50.721547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e6a277e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e55080100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9e54f740d0>]}
+[0m13:21:50.730006 [debug] [MainThread]: Flushing usage events
