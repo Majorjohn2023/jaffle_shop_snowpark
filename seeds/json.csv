@@ -1,0 +1,8 @@
+id,name,address,contact_info,preferences,misc
+1,"{"first_name":"Michael","last_name":"P."}","123 Main St, Anytown USA","{""email"":""michael@email.com"",""phone"":""555-1234""}","{""color"":""blue"",""food"":""pizza""}","This is just some random text"
+2,"{"first_name":"Shawn","last_name":"M."}","456 Oak Ave, Sometown USA","{""email"":""shawn@email.com"",""phone"":""555-5678""}","{""color"":""green"",""food"":""sushi""}",Another text cell
+3,"{"first_name":"Kathleen","last_name":"P."}","789 Elm St, Otherville USA","{""email"":""kathleen@email.com"",""phone"":""555-9012""}","{""color"":""red"",""food"":""tacos""}","Yet another text cell"
+4,"{"first_name":"Jimmy","last_name":"C."}","321 Maple Rd, Somewhere USA","{""email"":""jimmy@email.com"",""phone"":""555-3456""}","{""color"":""yellow"",""food"":""burgers""}",Random text
+5,"{"first_name":"Katherine","last_name":"R."}","654 Pine Ln, Anothertown USA","{""email"":""katherine@email.com"",""phone"":""555-7890""}","{""color"":""purple"",""food"":""salad""}","More random text"
+6,"{"first_name":"Sarah","last_name":"R."}","987 Cedar Ave, Yetanothertown USA","{""email"":""sarah@email.com"",""phone"":""555-2468""}","{""color"":""orange"",""food"":""pasta""}",Final text cell
+7,"{"first_name":"Martin","last_name":"M."}","159 Birch St, Lasttown USA","{""email"":""martin@email.com"",""phone"":""555-8642""}","{""color"":""black"",""food"":""steak""}",The end
